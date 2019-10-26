@@ -18,8 +18,15 @@ import lombok.NoArgsConstructor;
 @Entity
 public class Trip extends BaseEntity {
 
+// @Embedded annotations are used on a class that has @Embeddable annotations
+// this causes fields from the From class to be added to the "trip" table
+// in this way we have 3 Java classes and 1 sql table
+
     @Embedded
     private From from;
+
+// this annotation means that the values from the enuma in the database will be saved as a string
+// not a numeric value (default behavior)
 
     @Embedded
     private To to;

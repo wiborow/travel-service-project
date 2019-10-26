@@ -5,6 +5,8 @@ import lombok.EqualsAndHashCode;
 
 import javax.persistence.MappedSuperclass;
 
+// class with name field, auxiliary not to copy name field several times
+
 @EqualsAndHashCode(callSuper = true)
 @MappedSuperclass
 @Data
