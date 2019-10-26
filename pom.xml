@@ -11,6 +11,17 @@
     <groupId>com.sda.javadublin1</groupId>
     <artifactId>travel-service-project</artifactId>
     <version>1.0.0-SNAPSHOT</version>
+    <!--    project version
+            1. major version - breaking change, additionally written instructions
+               to migrate to the new version
+            2. minor version - new functionalities
+            3. patch version - bug fixes
+
+            suffix
+            without or RELEASE - finished, released version
+            SNAPSHOT - the version you are currently working on
+            RC - Release Candidate - test version before release
+    -->
     <name>travel-service-project</name>
     <description>travel-service-project</description>
 
