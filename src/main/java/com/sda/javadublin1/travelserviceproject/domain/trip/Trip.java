@@ -1,4 +1,4 @@
-package com.sda.javadublin1.travelserviceproject.domain;
+package com.sda.javadublin1.travelserviceproject.domain.trip;
 
 import java.time.LocalDate;
 import java.time.Period;
@@ -6,6 +6,11 @@ import javax.persistence.Embedded;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
+
+import com.sda.javadublin1.travelserviceproject.domain.BaseEntity;
+import com.sda.javadublin1.travelserviceproject.domain.Catering;
+import com.sda.javadublin1.travelserviceproject.domain.From;
+import com.sda.javadublin1.travelserviceproject.domain.To;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -36,7 +41,7 @@ public class Trip extends BaseEntity {
 
     private LocalDate departureDate;
     private LocalDate returnDate;
-    private Double adultPrice;
+    private Double adultsPrice;
     private Double kidsPrice;
     private boolean promoted;
     private Integer adultPlacesAvailable;
